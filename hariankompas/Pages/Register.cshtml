@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Harian Kompas";
@@ -9,8 +9,12 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <h2 class="blockquote">Log in to your account !</h2>
+    <h2 class="blockquote">Create an account !</h2>
     <form method="post">
+        <div class="form-group">
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username" class="form-control" required />
+        </div>
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" class="form-control" required />
@@ -19,7 +23,7 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" class="form-control" required />
         </div>
-        <button type="submit" class="btn btn-primary">Log In</button>
+        <button type="submit" class="btn btn-primary">Register</button>
     </form>
-    <p>Do not have an account? <a href="/Register">Register</a></p>
+    <p>Already have an account? <a href="/Index">Login</a></p>
 </div>
