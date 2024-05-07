@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbookpro/Projects/hariankompas/hariankompas/hariankompas.csproj",
+      "projectUniqueName": "/Users/macbookpro/Documents/[NET]/hariankompas/hariankompas/hariankompas.csproj",
       "projectName": "hariankompas",
-      "projectPath": "/Users/macbookpro/Projects/hariankompas/hariankompas/hariankompas.csproj",
+      "projectPath": "/Users/macbookpro/Documents/[NET]/hariankompas/hariankompas/hariankompas.csproj",
       "packagesPath": "/Users/macbookpro/.nuget/packages/",
-      "outputPath": "/Users/macbookpro/Projects/hariankompas/hariankompas/obj/",
+      "outputPath": "/Users/macbookpro/Documents/[NET]/hariankompas/hariankompas/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
