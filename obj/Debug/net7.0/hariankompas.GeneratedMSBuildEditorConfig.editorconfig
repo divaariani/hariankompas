@@ -16,6 +16,38 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/macbookpro/Downloads/Workspace/hariankompas
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL0hvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL1ByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL1JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL1NoYXJlZC9fVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL19WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL19WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/macbookpro/Downloads/Workspace/hariankompas/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,6 +79,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/macbookpro/Downloads/Workspace/hariankompas/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/hariankompas/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = aGFyaWFua29tcGFzL1BhZ2VzL1NoYXJlZC9fTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-5ymc1xhjir
 
 [/Users/macbookpro/Downloads/Workspace/hariankompas/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
