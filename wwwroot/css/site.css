@@ -60,3 +60,30 @@ input[type="password"] {
     background-color: #e2B836;
     color: #005993;
 }
+
+.detail-box {
+    background-color: #e2B836;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #005993;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+dl {
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
