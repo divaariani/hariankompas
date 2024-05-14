@@ -55,3 +55,8 @@ input[type="password"] {
 .btn:hover {
     background-color: #e2B836;
 }
+
+.table thead tr th {
+    background-color: #e2B836;
+    color: #005993;
+}

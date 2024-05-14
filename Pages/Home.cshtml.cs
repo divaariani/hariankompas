@@ -28,7 +28,7 @@ public class HomeModel : PageModel
             var jsonString = await response.Content.ReadAsStringAsync();
             var data = JsonConvert.DeserializeObject<OpnameData>(jsonString);
 
-            ViewData["Rows"] = data.Rows; // Populate ViewData with the deserialized rows
+            ViewData["Rows"] = data.Rows;
         }
         else
         {
