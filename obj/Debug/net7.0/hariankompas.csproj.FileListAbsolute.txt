@@ -29,3 +29,5 @@
 /Users/macbookpro/Downloads/Workspace/hariankompas/obj/Debug/net7.0/hariankompas.pdb
 /Users/macbookpro/Downloads/Workspace/hariankompas/obj/Debug/net7.0/hariankompas.genruntimeconfig.cache
 /Users/macbookpro/Downloads/Workspace/hariankompas/obj/Debug/net7.0/ref/hariankompas.dll
+/Users/macbookpro/Downloads/Workspace/hariankompas/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/macbookpro/Downloads/Workspace/hariankompas/obj/Debug/net7.0/hariankompas.csproj.CopyComplete
