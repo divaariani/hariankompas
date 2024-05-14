@@ -18,6 +18,7 @@
                             <th class="text-center">Confirmed</th>
                             <th class="text-center">Warehouse</th>
                             <th class="text-center">Description</th>
+                            <th class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,6 +31,9 @@
                                 <td>@row.Confirmed</td>
                                 <td>@row.WarehouseName</td>
                                 <td>@row.Description</td>
+                                <td>
+                                    <a asp-page="./Detail" asp-route-id="@row.ID">Detail</a>
+                                </td>
                             </tr>
                         }
                     </tbody>

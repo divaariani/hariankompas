@@ -1,0 +1,28 @@
+﻿@page "{id:int}"
+@model DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div>
+    <h1>Stock Detail</h1>
+    <dl>
+        <dt>ID:</dt>
+        <dd>@Model.Row.ID</dd>
+
+        <dt>Name:</dt>
+        <dd>@Model.Row.Name</dd>
+
+        <dt>Description:</dt>
+        <dd>@Model.Row.Description</dd>
+
+        <dt>Warehouse:</dt>
+        <dd>@Model.Row.WarehouseName</dd>
+
+        <dt>Status:</dt>
+        <dd>@Model.Row.WorkstateName</dd>
+
+        <dt>Created:</dt>
+        <dd>@Model.Row.CreatedDate by @Model.Row.CreatedByName </dd>
+    </dl>
+</div>
