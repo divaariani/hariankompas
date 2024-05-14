@@ -1,10 +1,40 @@
 ﻿@page
 @model HomeModel
 @{
-    ViewData["Title"] = "Homepage";
+    ViewData["Title"] = "Stock Opname";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h2 class="blockquote">This is home dashboard !</h2>
+    <h1 class="display-4">Welcome !</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-condensed table-striped" style="background-color: yellow; color: blue;">
+                    <thead>
+                        <tr>
+                            <th class="text-center">ID</th>
+                            <th>Name/ Number</th>
+                            <th>Date</th>
+                            <th>Confirmed</th>
+                            <th>Warehouse</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var row in ViewData["Rows"] as List<OpnameRow>)
+                        {
+                            <tr>
+                                <td>@row.ID</td>
+                                <td>@row.Name</td>
+                                <td>@row.OpnameDate</td>
+                                <td>@row.Confirmed</td>
+                                <td>@row.WarehouseName</td>
+                                <td>@row.Description</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
