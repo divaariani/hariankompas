@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model BookDetailModel
+@{
+    ViewData["Title"] = "Book Detail";
+}
+
+<div class="detail-box">
+    <h2>Book Detail</h2>
+    <dl>
+        <dt>ID:</dt>
+        <dd>@Model.Row.ID</dd>
+
+        <dt>Name:</dt>
+        <dd>@Model.Row.Name</dd>
+
+        <dt>Description:</dt>
+        <dd>@Model.Row.Description</dd>
+
+        <dt>Last Modify:</dt>
+        <dd>@Model.Row.ModifiedDate</dd>
+    </dl>
+</div>

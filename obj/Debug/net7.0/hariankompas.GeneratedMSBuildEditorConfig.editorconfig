@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/macbookpro/Downloads/Workspace/hariankompas
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/macbookpro/Downloads/Workspace/hariankompas/Pages/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macbookpro/Downloads/Workspace/hariankompas/Pages/BookDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/macbookpro/Downloads/Workspace/hariankompas/Pages/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
