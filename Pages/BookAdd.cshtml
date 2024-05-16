@@ -1,4 +1,4 @@
-﻿@page "{id:int}"
+﻿@page
 @model BookAddModel
 @{
     ViewData["Title"] = "Add Book Form";
@@ -6,19 +6,18 @@
 
 <div class="text-center">
     <h1 class="display-4">New Book</h1>
-    <<form action="/Book">
-        @* method="post" *@
+    <form method="post">
         <div class="form-group">
-            <label for="bookname">Name</label>
-            <input type="text" id="bookname" name="bookname" class="form-control" required />
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control" required />
         </div>
         <div class="form-group">
-            <label for="bookcode">Code</label>
-            <input type="text" id="bookcode" name="bookcode" class="form-control" required />
+            <label asp-for="Code">Code</label>
+            <input asp-for="Code" class="form-control" required />
         </div>
         <div class="form-group">
-            <label for="bookdescription">Description</label>
-            <input type="text" id="bookdescription" name="bookdescription" class="form-control" required />
+            <label asp-for="Description">Description</label>
+            <input asp-for="Description" class="form-control" required />
         </div>
         <button type="submit" class="btn btn-primary">Save</button>
     </form>

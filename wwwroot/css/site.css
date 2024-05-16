@@ -92,7 +92,7 @@ dd {
     background-color: #e2B836;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 6px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -103,13 +103,35 @@ dd {
     border-radius: 20px;
 }
 
-.button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #e2B836;
-}
-
-.button1:hover {
+.savebutton {
     background-color: #e2B836;
     color: white;
+    border: 1px solid black;
+}
+
+.savebutton:hover {
+    background-color: white;
+    color: #e2B836;
+}
+
+.deletebutton {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+
+.deletebutton:hover {
+    background-color: white;
+    color: red;
+}
+
+.editbutton {
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+.editbutton:hover {
+    background-color: white;
+    color: blue;
 }

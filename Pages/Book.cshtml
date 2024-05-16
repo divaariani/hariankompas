@@ -30,7 +30,6 @@
                                 <td>@row.Description</td>
                                 <td>@row.ModifiedDate </td>
                                 <td>
-                                    <!-- <a asp-page="./BookDetail" asp-route-id="@row.ID">Detail</a> -->
                                     <a asp-page="./BookAdd" asp-route-id="@row.ID">Edit</a>
                                     <a asp-page="./BookDetail" asp-route-id="@row.ID">Delete</a>
                                 </td>
@@ -39,7 +38,7 @@
                     </tbody>
                 </table>
 
-                <button class="button button1">Add New Book</button>
+                <a href="./BookAdd" class="button savebutton">Add New Book</a>
             </div>
 
         </div>
