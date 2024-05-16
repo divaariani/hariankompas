@@ -24,16 +24,22 @@
                         {
                             <tr>
                                 <td>@row.RowNumber</td>
-                                <td>@row.Name</td>
+                                <td>
+                                    <a asp-page="./BookDetail" asp-route-id="@row.ID">@row.Name</a>
+                                </td>
                                 <td>@row.Description</td>
                                 <td>@row.ModifiedDate </td>
                                 <td>
-                                    <a asp-page="./BookDetail" asp-route-id="@row.ID">Detail</a>
+                                    <!-- <a asp-page="./BookDetail" asp-route-id="@row.ID">Detail</a> -->
+                                    <a asp-page="./BookAdd" asp-route-id="@row.ID">Edit</a>
+                                    <a asp-page="./BookDetail" asp-route-id="@row.ID">Delete</a>
                                 </td>
                             </tr>
                         }
                     </tbody>
                 </table>
+
+                <button class="button button1">Add New Book</button>
             </div>
 
         </div>

@@ -87,3 +87,29 @@ dt {
 dd {
     margin-bottom: 10px;
 }
+
+.button {
+    background-color: #e2B836;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e2B836;
+}
+
+.button1:hover {
+    background-color: #e2B836;
+    color: white;
+}
