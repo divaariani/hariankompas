@@ -1,0 +1,48 @@
+﻿@page
+@model FinanceReceivingModel
+@{
+    ViewData["Title"] = "Finance Receiving";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Finance</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th class="text-center"></th>
+                            <th class="text-center">Number</th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">Warehouse</th>
+                            <th class="text-center">Supplier</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var row in ViewData["Rows"] as List<FinanceRow>)
+                        {
+                            <tr>
+                                <td>@row.ID</td>
+                                <td>
+                                    <a asp-page="./FinanceDetail" asp-route-id="@row.ID">@row.Number</a>
+                                </td>
+                                <td>@row.ReceivingDate.ToString("dd MMMM yyyy HH:mm")</td>
+                                <td>@row.WarehouseName</td>
+                                <td>@row.SupplierReference - @row.SupplierName </td>
+                                <td>
+                                    <a asp-page="./FinanceAdd" asp-route-id="@row.ID">Edit</a>
+                                    <a asp-page="./FinanceDetail" asp-route-id="@row.ID">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <a href="./FinanceAdd" class="button savebutton">Add New</a>
+            </div>
+
+        </div>
+    </div>
+</div>

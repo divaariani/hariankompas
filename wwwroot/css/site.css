@@ -106,7 +106,6 @@ dd {
 .savebutton {
     background-color: #e2B836;
     color: white;
-    border: 1px solid black;
 }
 
 .savebutton:hover {

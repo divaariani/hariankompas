@@ -1,42 +1,49 @@
-﻿using hariankompas.Pages;
-using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
+﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Text;
-using System.Text.Json;
+using System.Net.Http;
 using System.Threading.Tasks;
 
-public class BookController : Controller
+public class BookFormatController : Controller
 {
-    private readonly HttpClient _httpClient;
-
-    public BookController(IHttpClientFactory httpClientFactory)
-    {
-        _httpClient = httpClientFactory.CreateClient();
-    }
-
-    [HttpGet]
     public IActionResult Create()
     {
         return View();
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(BookAddModel model)
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(BookFormatViewModel model)
     {
-        model.Id = 0;
-
-        var json = JsonSerializer.Serialize(model);
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        var response = await _httpClient.PostAsync("http://localhost:8000/api/BookFormat/Save", content);
-
-        if (response.IsSuccessStatusCode)
+        if (ModelState.IsValid)
         {
-            return RedirectToAction("Index", "Home");
+            var bookFormat = new BookFormat
+            {
+                Id = 0,
+                Name = model.Name,
+                Code = model.Code,
+                Description = model.Description,
+                Token = "hariankompas"
+            };
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://localhost:8000/");
+                var content = new StringContent(JsonConvert.SerializeObject(bookFormat), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync("api/BookFormat/Save", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Success");
+                }
+                else
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    ModelState.AddModelError(string.Empty, $"Server error: {response.StatusCode}. Response: {responseContent}");
+                }
+            }
         }
-        else
-        {
-            return RedirectToAction("Error", "Home");
-        }
+
+        return View(model);
     }
 }

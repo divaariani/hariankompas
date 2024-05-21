@@ -8,11 +8,11 @@ using Newtonsoft.Json;
 
 namespace hariankompas.Pages
 {
-    public class BookModel : PageModel
+    public class FinanceReceivingModel : PageModel
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        public BookModel(IHttpClientFactory clientFactory)
+        public FinanceReceivingModel(IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
         }
@@ -20,12 +20,12 @@ namespace hariankompas.Pages
         public async Task OnGet()
         {
             var client = _clientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:8000/api/BookFormat/List?page=1&pageSize=20");
+            var response = await client.GetAsync("http://localhost:8000/api/FinanceReceiving/Read");
 
             if (response.IsSuccessStatusCode)
             {
                 var jsonString = await response.Content.ReadAsStringAsync();
-                var data = JsonConvert.DeserializeObject<BookData>(jsonString);
+                var data = JsonConvert.DeserializeObject<FinanceData>(jsonString);
 
                 ViewData["Rows"] = data.Rows;
             }
@@ -36,9 +36,9 @@ namespace hariankompas.Pages
         }
     }
 
-    public class BookData
+    public class FinanceData
     {
-        public List<BookRow>? Rows { get; set; }
+        public List<FinanceRow>? Rows { get; set; }
         public int Status { get; set; }
         public string? Message { get; set; }
         public string? MessageDescription { get; set; }
@@ -46,15 +46,15 @@ namespace hariankompas.Pages
         public List<string>? Columns { get; set; }
     }
 
-    public class BookRow
+    public class FinanceRow
     {
-        public int RowNumber { get; set; }
-        public int RowCount { get; set; }
         public int ID { get; set; }
-        public string? Code { get; set; }
-        public string? Name { get; set; }
-        public string? Description { get; set; }
-        public DateTime ModifiedDate { get; set; }
-        public int ModifiedBy { get; set; }
+        public string? Number { get; set; }
+        public DateTime ReceivingDate { get; set; }
+        public string? WarehouseName { get; set; }
+        public string? CompanyName { get; set; }
+        public string? ReferenceGRNumber { get; set; }
+        public string? SupplierReference { get; set; }
+        public string? SupplierName { get; set; }
     }
 }
